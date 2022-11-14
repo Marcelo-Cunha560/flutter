@@ -1,0 +1,62 @@
+mport 'dart:math';
+void main() {
+  //if, switch,for,while
+  //int, double, String, Map
+  
+  final a = Test("q");
+    print(a.a);
+  
+  int n1 = 3;
+  double n2 = (-5.67).abs();
+  print(n1.abs() + n2);
+  
+  String s1 = "bom";
+  String s2 = " dia";
+  print(s1+s2);
+  
+  dynamic x = "ola";
+    
+  x = 123;
+  print(x);
+  
+  var aprovados = ['ana', 'carlos', 'daniel', 'rafael'];
+  //print(aprovados is List);
+  print(aprovados);
+  print(aprovados.elementAt(2));
+  
+  var nomes = {
+    'joao': '55 92 99999-9999',
+    'maria': '55 92 98888-8888',
+    'marcelo':'55 92 97777-7777'
+  };
+  print(nomes);
+  print(nomes);
+  print(nomes['joao']);
+  var times = {'vasco', 'flamengo', 'fortaleza', 'sao paulo'};
+  //print(times is Set);
+  times.add('palmeiras');
+  print(times);
+  
+  var nome = "marcelo cunha"
+    .substring(0,7)
+    .toUpperCase()
+    .padRight(2,"!");
+  
+  print(nome);
+  
+  var nota = Random().nextInt(11);
+  print("Nota selecionada foi $nota.");
+  
+  
+  if(nota >= 5){
+  print('aprovado');
+  }else if(nota >=5){
+    print("recuperacao");
+  }
+}
+
+class Test {
+  String a;
+  
+  Test(this.a);
+}
